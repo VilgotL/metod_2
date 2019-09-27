@@ -1,0 +1,22 @@
+using System;
+
+namespace uppgift2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("10 upphöjt till 7: " + Power(10, 7));
+            Console.WriteLine("2 upphöjt till 10: " + Power(2, 10));
+        }
+        public static int Power(int a, int b)
+        {
+            int gammal_a = a;
+            for(int i = 1; i < b; i++)
+            {
+                a *= gammal_a;
+            }
+            return a;
+        }
+    }
+}
